@@ -1,5 +1,6 @@
 import WorkImg from "../assets/workImg.jpeg"
 import realEstate from '../assets/realestate.jpg'
+import { motion } from "framer-motion";
 
 const Work = () => {
     return (
@@ -12,7 +13,22 @@ const Work = () => {
                 </div>
 
                 {/** Container */}
-                <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
+                <motion.div
+                    className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'
+                    /** initial condition */
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.5 }}
+                    transition={{ duration: 0.5 }}
+                    variants={{
+                        /** final conditions
+                         * x: -50 : div will be at -50 from the start
+                         * x: 0 : div will be at 0 from the start
+                         */
+                        hidden: { opacity: 0, x: -50 },
+                        visible: { opacity: 1, x: 0 },
+                    }}
+                >
 
                     {/** Grid item */}
                     <div style={{ backgroundImage: `url(${WorkImg})` }}
@@ -52,7 +68,7 @@ const Work = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </div>
     )
