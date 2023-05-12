@@ -1,4 +1,5 @@
 import Trippy from "../assets/Trippy.png"
+import Library from "../assets/Library.png"
 import { motion } from "framer-motion";
 
 const Work = () => {
@@ -43,6 +44,25 @@ const Work = () => {
                                     <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">Demo</button>
                                 </a>
                                 <a href="https://github.com/GabrielDelaPena/travel" target="_blank" rel="noreferrer">
+                                    <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">Code</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style={{ backgroundImage: `url(${Library})` }}
+                        className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+
+                        {/** Hover effects */}
+                        <div className="opacity-0 group-hover:opacity-100">
+                            <span className="text-2xl font-bold text-white tracking-wider">
+                                Node JS Application
+                            </span>
+                            <div className="pt-8 text-center">
+                                <a href="https://f4f7e4d8.library-tl1.pages.dev/" target="_blank" rel="noreferrer">
+                                    <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">Demo</button>
+                                </a>
+                                <a href="https://github.com/GabrielDelaPena/Library_Front_End_V1" target="_blank" rel="noreferrer">
                                     <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">Code</button>
                                 </a>
                             </div>
