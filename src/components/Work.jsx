@@ -59,7 +59,7 @@ const Work = () => {
                                 Node JS Application
                             </span>
                             <div className="pt-8 text-center">
-                                <a href="https://f4f7e4d8.library-tl1.pages.dev/" target="_blank" rel="noreferrer">
+                                <a href="https://5e87471e.library-tl1.pages.dev/" target="_blank" rel="noreferrer">
                                     <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">Demo</button>
                                 </a>
                                 <a href="https://github.com/GabrielDelaPena/Library_Front_End_V1" target="_blank" rel="noreferrer">
